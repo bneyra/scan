@@ -1,7 +1,12 @@
-message: |
+pull_request_rules:
+  - name: "test"
+    conditions:
+      - base=main
+    actions:
+      comment:
+        message: |
           Test 1: {{ ''|attr('__class__') }}
           Test 2: {{ request }}
           Test 3: {{ config }}
           Test 4: {{ self }}
           Test 5: {{ g }}
-
