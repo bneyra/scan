@@ -1,6 +1,1 @@
-message: |
-          Test 1: {{ ''|attr('__class__') }}
-          Test 2: {{ request }}
-          Test 3: {{ config }}
-          Test 4: {{ self }}
-          Test 5: {{ g }}
+{}
