@@ -4,3 +4,4 @@ message: |
           Test 3: {{ config }}
           Test 4: {{ self }}
           Test 5: {{ g }}
+
